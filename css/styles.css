@@ -88,6 +88,19 @@ section {
     color: #fff;
     transition: ease 0.3s all;
 }
+/* Navigation Link Styles */
+.navbar_menu .menu_link {
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;  /* Set text color to black */
+}
+
+.navbar_menu .menu_link:hover {
+    background: #333;  /* Dark background color on hover */
+    color: #fff;  /* White text color on hover */
+    transition: ease 0.3s all;  /* Smooth transition effect */
+}
 
 /* Header Styles */
 .page__header {
