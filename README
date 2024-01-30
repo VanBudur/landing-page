@@ -22,4 +22,8 @@ or
 first you open your browser
 second you click `ctrl+O`
 third you navigate to your index.html
+<<<<<<< HEAD
 forth you click on it
+=======
+forth you click on it
+>>>>>>> 8fd23a7461f3832ad1ba4fefdb806ba9b8141f3a
