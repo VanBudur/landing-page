@@ -68,12 +68,12 @@ section {
     padding: 2%;
     padding-left: 0;
     margin: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .navbar__menu li {
     display: inline-flex;
-    padding: left 2%;
+    padding-left: 2%;
 }
 
 .navbar__menu .menu__link {
