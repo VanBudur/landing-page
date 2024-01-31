@@ -98,6 +98,29 @@ const removeActive =(section)=>{
 
 };
 
+// ------------------------------------------------
+const removeActiveNavLink = (section)=>{
+    const links = document.querySelectorAll(".menu__link");
+
+    links.forEach((link)=>{
+        if (link.href.split("#")[1] == section.id) {
+            link.classList.remove('active');
+        }
+    });
+}
+// --------------------------------------------------
+const addActiveNavLink = (conditional, section)=>{
+    if (conditional) {
+        const links = document.querySelectorAll(".menu__link");
+    
+        links.forEach((link)=>{
+            if (link.href.split("#")[1] == section.id) {
+                link.classList.add('active');
+            }
+        });
+    }
+}
+
 
 // second to add active class
 const addActive =(conditional, section)=>{
