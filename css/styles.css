@@ -64,7 +64,16 @@ section {
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
+.navbar__menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: palevioletred;
+    color: aquamarine;
+}
 .navbar__menu ul {
+    display: flex;
+    list-style-type: none;
     padding: 2%;
     padding-left: 0;
     margin: 0;
@@ -88,7 +97,18 @@ section {
     color: #fff;
     transition: ease 0.3s all;
 }
-/* Navigation Link Styles */
+.navbar__menu ul li a.active{
+    background-color: pink;
+    color: gray;
+
+}
+.navbar__menu:active{
+    color: rgb(95, 62, 68);
+}
+.navbar__menu:visited{
+    color:rgb(95, 62, 68);
+}
+/* Navigation Link Styles
 .navbar_menu .menu_link {
     display: inline-block;
     font-weight: bold;
@@ -99,7 +119,8 @@ section {
 .navbar_menu .menu_link:hover {
     background: #333;  
     color: #fff;  
-    transition: ease 0.3s all;
+    transition: ease 0.3s all; */
+
 
 /* Header Styles */
 .page__header {

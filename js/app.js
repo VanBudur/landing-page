@@ -43,16 +43,38 @@ const sections = document.querySelectorAll("section");
  * Begin Main Functions
  * 
 */
+// document.querySelectorAll('section');
+// document.querySelectorAll('nav ul li a');
+// const options ={
+//     root: null,
+//     rootMargin: 'Opx',
+//     threshold: 0.5 
+
+// };
+// const observer= new IntersectionObserver(function (entrise, observer){
+//     entrise.forEach(entry=>{
+//         if (entry.isIntersecting){
+//             const activeSection = entry.target.id;
+//             navLinks.forEach(link=>{
+//                 link.classList.remove('active');
+//                 if (link.getAttribute('href') === '#${activeSection}'){
+//                     link.classList.add('active');
+//                 }
+//             });
+//         }
+//     });
+// }, options);
+    
 
 // build the nav
 
-const navBuilder = () => {
-    let navUI='';
+const navBuilder=()=> {
+    let navUI = '';
     // عشان نسوي لوب لكل السكاشن
     sections.forEach(section => {
         const sectionID = section.id;
-        const sectionDataNav =section.dataset.nav;
-        
+        const sectionDataNav = section.dataset.nav;
+
         navUI += `<li><a class="menu__link" href="#${sectionID}">${sectionDataNav}</a></li>`;
     });
     // عشان نلحق العناصر بالنافيقيشن
@@ -75,6 +97,7 @@ const removeActive =(section)=>{
     section.style.cssText = "background-color: linear-gradient(0deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.2) 100%)";
 
 };
+
 
 // second to add active class
 const addActive =(conditional, section)=>{
