@@ -99,7 +99,9 @@ const removeActive =(section)=>{
 };
 
 // ------------------------------------------------
+
 const removeActiveNavLink = (section)=>{
+  
     const links = document.querySelectorAll(".menu__link");
 
     links.forEach((link)=>{
@@ -117,6 +119,7 @@ const addActiveNavLink = (conditional, section)=>{
             if (link.href.split("#")[1] == section.id) {
                 link.classList.add('active');
             }
+
         });
     }
 }
@@ -126,7 +129,7 @@ const addActiveNavLink = (conditional, section)=>{
 const addActive =(conditional, section)=>{
     if(conditional){
         section.classList.add('your-active-class');
-        section.style.cssText = "background-color: blue;";
+        section.style.cssText = "background-color: pink;";
     };
 };
 //implementating the actual function
@@ -137,13 +140,17 @@ const sectionActivation = () => {
         const elementOffset = offset(section);
 
         inviewport = () => elementOffset < 150 && elementOffset >= -150;
-
+        // ----------------------------------------------------------------
         removeActive(section);
+        removeActiveNavLink(section);
         addActive(inviewport(),section);
+        addActiveNavLink(inviewport(), section);
     });
 };
 
 window.addEventListener('scroll' ,sectionActivation);
+
+
 
 // Scroll to anchor ID using scrollTO event
 

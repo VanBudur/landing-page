@@ -104,9 +104,11 @@ section {
 }
 .navbar__menu:active{
     color: rgb(95, 62, 68);
+    
 }
 .navbar__menu:visited{
     color:rgb(95, 62, 68);
+    
 }
 /* Navigation Link Styles
 .navbar_menu .menu_link {
